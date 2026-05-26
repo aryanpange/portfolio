@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Aryan Pange - Comic Portfolio</title>
+    <meta name="description" content="Portfolio of Aryan Pange — Data Analyst, Developer, and AI Enthusiast. Built with a comic-book noir aesthetic.">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Space+Grotesk:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="grain" data-mode="connect">
+
+    <!-- Spotlight X-Ray Layer -->
+    <div class="spotlight-layer" id="spotlight-layer">
+        <div class="spotlight-inner">
+            <div class="spotlight-bg-section" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAr5IKXpidoKkEukPscb2Q1GMQxBWYpKg-aTKCuZjf-31OqEQYqhn7skd65d5WO3SRX2pBZMxQ9weEMgH0HhKZabQH3Z66lrrtSEZIMQ-fxf1tK-awjGiGwFbjjJ4CzcBA55F-BKzdI2xgnJU1qrsnQWlHxSTcDFyD_Bq61Wvb42OkK-UnQqolWlbxnU90H-eLe68VgX5RzTivXM4JS5UBV0-LLeFyM6UELIQSn8veRJ3IIhb7SSU--tQi7OcvPJyd8UlhJn7BpJUA');"></div>
+            <div class="spotlight-bg-section" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAfjSUDpNS8kxzY7QBpUCSUULOzwTih2Xg8bIoZjRcBHSDGJD92eBH-rW_jE-XxRD-fek2SG4NCw2jdbckXJruBLK5scsyoBiBy0iD6lyx18p1kln3HGNDl3y-Ak78ChIiiyye5RE-mirUSHN7AFD-WTNEhNY3j-73lK0fZmNHwjGhaP3eraenn_fd4yWv0FbD8AZU1MUA29NiOYzN3CiQIxPmPSVW2xEEojMRQvQYxCh5octOGnYuYjR5qsW-ZcW_-YUKC75yldxs');"></div>
+            <div class="spotlight-bg-section" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAuU4Ls4vr1eGOYMQTLTJuhR5r6oKFH4D7JMxZFlncAWsVYM_ImSuMkRi_vnXyD3IvwqtGx_P_RSdmI_ZnkOL_ekKU4Ghpepjt8kzwIv8IjDtJ2K-L01HVYsQPfdN6jrVRc_Isrbx-MKaoBy2V8YKM6aR-osnwsyFoWutvmVBewcTjXOe3QkALfguYFVlUKpwenCmLDn_06muezGdZHGYnSGrWJXLIFLoEpfD6VgQVdqehwV0n1lCiretGfrY95_nash6sT4uWR3j0');"></div>
+            <div class="spotlight-bg-section" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDxUOp7Nc4iPmh0gn0xz95hHPPguWZGrMShZgngSxCrRHyWerm9zNOyLewOSgoysfA8gDLNbhSYuFhgZRxQxNis-gk0A0cTnQLxMpbyUU4hVDHpOIxg4zTqUcyO2K-UTo4Szh7xWK58H6Hc5p6G8pFKHthvk2-6QoKfMr8JgctDs8OE5DBsnL0xLtheR3ZhPZNXrQxt2wQm0gfq5BqkL78fxCLvLD3IZkkI8y3IfRp--wz7VY2YcwN0bbipuCN_D3vsZPt4Dz8ZxDk');"></div>
+        </div>
+    </div>
+
+    <!-- Canvas Particle Dots -->
+    <canvas class="global-canvas" id="global-canvas"></canvas>
+
+    <!-- Top Navigation -->
+    <nav class="main-nav" id="navbar">
+        <div class="nav-logo">ARYAN.PANGE</div>
+        <ul class="nav-links">
+            <li><a href="#about">ME</a></li>
+            <li><a href="#experience">WORK EX</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#certifications">CERTIFICATION</a></li>
+        </ul>
+        <a class="nav-cta" href="#contact">Contact!</a>
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <main class="main-content">
+        <!-- Landing / Hero -->
+        <section class="hero-section" id="hero">
+            <div class="hero-inner pop-in">
+                <h1 class="hero-title tilt-effect">ARYAN PANGE</h1>
+                <p class="hero-subtitle tilt-effect">Built on curiosity, caffeine, and far too many open tabs.</p>
+            </div>
+        </section>
+
+        <!-- About Me Panel -->
+        <section class="about-section" id="about">
+            <div class="about-image-wrap pop-in tilt-effect">
+                <img alt="Aryan Character Image" class="about-image float-anim tilt-effect" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDuLMeNvHcDuN8SVYSocFCb_5BSK80HYnHGMubfgsZOkFlVrvXHmBmWj-eTxoxhBauOIlSP-uPnvor9fMEK9tYYyJK85KgPFqr2XOa1iZoIjQKwrQTH24yVQk6nOo9n8RAhgZzxDTwvQzHV7bmFnq1FZLronSWKTG_AWtTRkz8uyG6pe1u8XFr5X2zTWAaa6CePlrU6PtwQoNISrmtxoNnOHUZnqQtOBNV2L1VIF3t-zWWIuKO-5AEnB_i1rVJxm5a7Gwyf-RUQAU">
+            </div>
+            <div class="about-content pop-in">
+                <h2 class="section-title-orange tilt-effect">ABOUT ME</h2>
+                <div class="about-card tilt-effect">
+                    <p class="about-text">I enjoy building thoughtful digital experiences — whether that's through analytics, development, AI-driven projects, or creative problem-solving.</p>
+                    <p class="about-text">I'm naturally curious, love learning new tools, and enjoy working on ideas that combine logic, design, and real-world impact.</p>
+                    <p class="about-text">Outside of work, I tend to obsess over details, visuals, and tiny improvements nobody notices except me.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Action Line Divider -->
+        <div class="divider-wrap">
+            <div class="action-line tilt-effect"></div>
+        </div>
+
+        <!-- Skills Section -->
+        <section class="skills-section pop-in tilt-effect" id="skills">
+            <div class="skills-inner">
+                <!-- Header Row -->
+                <div class="skills-header">
+                    <div class="skills-title-box">
+                        <h2 class="skills-title">SKILLS</h2>
+                    </div>
+                    <div class="skills-speech-bubble">
+                        <p>"Everything here solves a problem. Eventually."</p>
+                    </div>
+                </div>
+                <!-- Skills Grid -->
+                <div class="skills-grid">
+                    <!-- Data Analytics -->
+                    <div class="skill-card tilt-effect">
+                        <h3 class="skill-card-title skill-card-title--primary">Data Analytics</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Exploratory Data Analysis (EDA)</span>
+                            <span class="skill-tag">Data Cleaning &amp; Validation</span>
+                            <span class="skill-tag">Statistical Analysis</span>
+                            <span class="skill-tag">Trend &amp; Performance Analysis</span>
+                            <span class="skill-tag">KPI &amp; Business Reporting</span>
+                            <span class="skill-tag">Anomaly Detection</span>
+                            <span class="skill-tag">Data Storytelling</span>
+                        </div>
+                    </div>
+                    <!-- Business Analytics -->
+                    <div class="skill-card tilt-effect">
+                        <h3 class="skill-card-title skill-card-title--tertiary">Business Analytics</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Business Insights Generation</span>
+                            <span class="skill-tag">Stakeholder Communication</span>
+                            <span class="skill-tag">Requirement Analysis</span>
+                            <span class="skill-tag">Attribution Analysis</span>
+                            <span class="skill-tag">Ad-hoc Analysis</span>
+                            <span class="skill-tag">Decision Intelligence</span>
+                            <span class="skill-tag">Process Optimization</span>
+                        </div>
+                    </div>
+                    <!-- Machine Learning & AI -->
+                    <div class="skill-card tilt-effect">
+                        <h3 class="skill-card-title skill-card-title--primary">Machine Learning &amp; AI</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Predictive Modeling</span>
+                            <span class="skill-tag">Classification &amp; Clustering</span>
+                            <span class="skill-tag">Feature Engineering</span>
+                            <span class="skill-tag">Model Evaluation</span>
+                            <span class="skill-tag">Natural Language Processing</span>
+                            <span class="skill-tag">LLM Workflow Design</span>
+                            <span class="skill-tag">Prompt Engineering</span>
+                        </div>
+                    </div>
+                    <!-- Programming & Development -->
+                    <div class="skill-card tilt-effect">
+                        <h3 class="skill-card-title skill-card-title--tertiary">Programming &amp; Development</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">HTML/CSS</span>
+                            <span class="skill-tag">Streamlit</span>
+                            <span class="skill-tag">REST APIs</span>
+                            <span class="skill-tag">Git/GitHub</span>
+                        </div>
+                    </div>
+                    <!-- Data & Visualization Tools -->
+                    <div class="skill-card tilt-effect">
+                        <h3 class="skill-card-title skill-card-title--primary">Data &amp; Visualization Tools</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Power BI</span>
+                            <span class="skill-tag">Tableau</span>
+                            <span class="skill-tag">Excel</span>
+                            <span class="skill-tag">Pandas</span>
+                            <span class="skill-tag">NumPy</span>
+                            <span class="skill-tag">Scikit-learn</span>
+                        </div>
+                    </div>
+                    <!-- AI Productivity & Workflow -->
+                    <div class="skill-card tilt-effect">
+                        <h3 class="skill-card-title skill-card-title--tertiary">AI Productivity &amp; Workflow</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Claude Code</span>
+                            <span class="skill-tag">GitHub Copilot</span>
+                            <span class="skill-tag">Cursor AI</span>
+                            <span class="skill-tag">AI-Assisted Development</span>
+                            <span class="skill-tag">Workflow Automation</span>
+                            <span class="skill-tag">Rapid Prototyping</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="education-section pop-in tilt-effect" id="education">
+            <div class="education-inner">
+                <div class="education-card-wrap pop-in">
+                    <div class="education-card tilt-effect" id="edu-panel">
+                        <div class="caption-box education-caption pop-in">THE ACADEMY</div>
+                        <h3 class="edu-degree">Bachelor's Degree</h3>
+                        <p class="edu-field">B.E. Computer Engineering</p>
+                        <p class="edu-school">St. Francis Institute of Technology - University of Mumbai</p>
+                        <div class="toggle-content" id="edu-details">
+                            <div class="edu-story">
+                                <p>Between deadlines, experiments, and collaborative builds, I discovered that my real interest lay beyond writing code — in understanding how data reveals patterns and how intelligent systems turn information into decisions.</p>
+                            </div>
+                        </div>
+                        <button class="btn-comic btn-comic--tertiary tilt-effect" id="edu-next-btn">Explore Journey</button>
+                    </div>
+                </div>
+                <div class="education-image-wrap pop-in">
+                    <img alt="Lofi Girl - The Student" class="education-image float-anim tilt-effect" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9JiFLq3p_Md9FzkaD4ss1A_WMTViX9Tq269KJk_4hWbf4JxAerm_sz5ys5y5QzouxQcukT8l6PzXaeIrWOggvGvLULIzKYNgCMG1lwy1ypLnXcNIyw3IHzPHt_EbC8YZhhY1t4DoTqBPudUttQK2Iyivky0ttM3ODKfqYSjNt6InwEUvqL519pkGmONyVh7XNT5UdoxIIeQRsiPAoLVSfT2hVzRkPJ2dBXpXgszSMXJeOY6YhXadfoYpUrEfS0uMM8J4IwVzGA_U">
+                </div>
+            </div>
+        </section>
+
+        <!-- Action Line Divider -->
+        <div class="divider-wrap">
+            <div class="action-line action-line--reverse tilt-effect"></div>
+        </div>
+
+        <!-- Work Experience Section -->
+        <section class="experience-section pop-in tilt-effect" id="experience">
+            <div class="section-header-center pop-in">
+                <h2 class="section-title-banner">THE GRIND</h2>
+            </div>
+            <div class="experience-inner pop-in">
+                <div class="experience-image-wrap pop-in">
+                    <img alt="The Boss" class="experience-image float-anim" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCz0pJn2_wKjtrPaNk3SyMV3V_EmUdioyBgfkok7hJ5qHUPkU6Y__FZxytIGaof1IQUVbRLNs99KrwDFe8ElfGEJNh3vPUT_RS4Vf37PlqjBSqhn2w9mC5Qrcc9PFV8cO9eO_FirNTVlRc4svQ5pslMqzLs1tOZ8_lFv5aDpFr3LgnqzlrTEsWubDKgfdCKqGOlCI195hlQT3T7eEnTCfeP5GGNdZU_ZuYMtUHLITZJn5OCr33knT-0jRuJ-An1P9--UMBWSaHHkxs">
+                </div>
+                <div class="experience-content pop-in">
+                    <!-- Main Work Experience -->
+                    <div class="work-bubble float-anim">
+                        <div class="work-badge">WORK EX</div>
+                        <h3 class="work-title">Data Processor Analyst</h3>
+                        <p class="work-company">Plan.net TechNest India - House of Communication</p>
+                        <p class="work-date">2025-26</p>
+                        <ul class="work-list">
+                            <li>Working as a Data Processor with responsibilities across data entry, validation, content integration, and data analysis. Ensuring accuracy and consistency in client datasets, supporting reporting workflows, and assisting in content management.</li>
+                            <li>Automated reporting pipelines using Python, Excel, and SQL.</li>
+                            <li>Collaborating with cross-functional teams to deliver data-driven solutions.</li>
+                        </ul>
+                    </div>
+                    <!-- Past Archives Toggle -->
+                    <div class="past-archives-trigger" id="past-archives-trigger">
+                        <div class="past-badge">PAST ARCHIVES</div>
+                        <p class="past-quote">"And past missions? The internships..."</p>
+                        <p class="past-hint">(Click to reveal internships)</p>
+                    </div>
+                    <!-- Internships Panel -->
+                    <div class="toggle-content" id="internships-panel">
+                        <div class="internships-panel">
+                            <h3 class="internships-title">Internship Logs</h3>
+                            <div class="internships-list">
+                                <!-- Web Dev Intern -->
+                                <div class="intern-entry intern-entry--primary" id="intern-1">
+                                    <div class="intern-header">
+                                        <div class="intern-role">Web Development Intern</div>
+                                        <div class="intern-year intern-year--primary">2024</div>
+                                    </div>
+                                    <p class="intern-company">Prodigy InfoTech - Project-based</p>
+                                    <div class="toggle-content" id="intern-1-details">
+                                        <p class="intern-quote">"Built responsive web interfaces and strengthened front-end development fundamentals through hands-on implementation of modern web solutions."</p>
+                                        <div class="intern-tags">
+                                            <span class="intern-tag intern-tag--primary">HTML/CSS</span>
+                                            <span class="intern-tag intern-tag--primary">JavaScript</span>
+                                            <span class="intern-tag intern-tag--primary">Responsive Design</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="intern-divider">
+                                <!-- Full Stack Intern -->
+                                <div class="intern-entry intern-entry--tertiary" id="intern-2">
+                                    <div class="intern-header">
+                                        <div class="intern-role">Full Stack Developer Intern</div>
+                                        <div class="intern-year intern-year--tertiary">2024</div>
+                                    </div>
+                                    <p class="intern-company">Meta CraftLab - Project-based</p>
+                                    <div class="toggle-content" id="intern-2-details">
+                                        <p class="intern-quote">"Worked across front-end and back-end development workflows, contributing to feature implementation and gaining practical experience in full-stack application architecture."</p>
+                                        <div class="intern-tags">
+                                            <span class="intern-tag intern-tag--tertiary">React</span>
+                                            <span class="intern-tag intern-tag--tertiary">Node.js</span>
+                                            <span class="intern-tag intern-tag--tertiary">API Integration</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Action Line Divider -->
+        <div class="divider-wrap">
+            <div class="action-line tilt-effect"></div>
+        </div>
+
+        <!-- Projects Section -->
+        <section class="projects-section pop-in tilt-effect" id="projects">
+            <div class="projects-header pop-in">
+                <div class="caption-box pop-in tilt-effect">CASE FILES</div>
+                <h2 class="projects-title tilt-effect">PROJECTS</h2>
+            </div>
+            <div class="comic-panel-grid">
+                <!-- Project 1 -->
+                <div class="comic-cell cell-1">
+                    <h3 class="project-name">Ad Spend Intelligence</h3>
+                    <p class="project-desc">Marketing performance intelligence platform focused on campaign spend analysis, KPI tracking, and decision-driven insights. Built to transform advertising data into actionable business intelligence through interactive analytics and performance attribution.</p>
+                    <div class="project-tags">
+                        <span>KPI Intelligence</span><span>Performance Attribution</span><span>Campaign Analytics</span><span>Decision Analytics</span><span>Interactive BI</span><span>Streamlit Deployment</span>
+                    </div>
+                    <div class="project-links"><a href="https://github.com/aryanpange/ad-spend-intelligence" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://ad-spend-intelligence.streamlit.app/" target="_blank" rel="noopener noreferrer">Live</a></div>
+                </div>
+                <!-- Project 2 -->
+                <div class="comic-cell cell-2">
+                    <h3 class="project-name">Mumbai Billboard Analytics</h3>
+                    <p class="project-desc">Geospatial analytics project designed to evaluate billboard placement efficiency using exploratory modeling and business insight generation. Focused on identifying location-driven advertising opportunities through spatial and trend analysis.</p>
+                    <div class="project-tags">
+                        <span>Spatial Analytics</span><span>Geospatial Insights</span><span>Exploratory Modeling</span><span>Business Intelligence</span><span>Trend Mapping</span><span>Insight Generation</span>
+                    </div>
+                    <div class="project-links"><a href="https://github.com/aryanpange/mumbai-billboard-analytics" target="_blank" rel="noopener noreferrer">GitHub</a></div>
+                </div>
+                <!-- Project 3 -->
+                <div class="comic-cell cell-3">
+                    <h3 class="project-name">GradeFusion.ai</h3>
+                    <p class="project-desc">AI-powered educational analytics system developed to predict student performance using machine learning and academic data mining. Published in the Journal of Technology for its research-driven analytical impact.</p>
+                    <div class="project-tags">
+                        <span>Predictive Modeling</span><span>Educational AI Systems</span><span>Academic Data Mining</span><span>ML Pipelines</span><span>Research Analytics</span><span>Intelligent Forecasting</span>
+                    </div>
+                    <div class="project-links"><a href="https://drive.google.com/file/d/1YPnl2tKqAuhUUsFzCpkpHLzASdzQiSYT/view" target="_blank" rel="noopener noreferrer">Live</a><a href="https://journaloftechnology.org/volume-13-issue-9-2025/" target="_blank" rel="noopener noreferrer">Publication</a></div>
+                </div>
+                <!-- Project 4 -->
+                <div class="comic-cell cell-4">
+                    <h3 class="project-name project-name--shadow">COVID Dashboard Streamlit</h3>
+                    <p class="project-desc">Interactive real-time monitoring dashboard designed for pandemic trend exploration and responsive analytical reporting using dynamic public datasets.</p>
+                    <div class="project-tags">
+                        <span>Real-Time Monitoring</span><span>Interactive Reporting</span><span>Streamlit Applications</span><span>Trend Forecasting</span><span>Dynamic Visualization</span><span>Public Data Systems</span>
+                    </div>
+                    <div class="project-links"><a href="https://github.com/aryanpange/covid-dashboard-streamlit" target="_blank" rel="noopener noreferrer">GitHub</a></div>
+                </div>
+                <!-- Project 5 -->
+                <div class="comic-cell cell-5">
+                    <h3 class="project-name">Telco Churn Prediction</h3>
+                    <p class="project-desc">Customer retention intelligence system using classification pipelines and behavioral analytics to identify churn risks and support predictive decision-making.</p>
+                    <div class="project-tags">
+                        <span>Churn Forecasting</span><span>Classification Pipelines</span><span>Feature Engineering</span><span>Customer Retention Analysis</span><span>Predictive Intelligence</span><span>Behavioral Segmentation</span>
+                    </div>
+                    <div class="project-links"><a href="https://github.com/aryanpange/Telco-Churn-Prediction" target="_blank" rel="noopener noreferrer">GitHub</a></div>
+                </div>
+            </div>
+            <!-- View More Projects -->
+            <div class="projects-footer pop-in">
+                <a class="projects-more-card tilt-effect" href="https://github.com/aryanpange" target="_blank" rel="noopener noreferrer">
+                    <h3 class="projects-more-title">View more projects</h3>
+                    <p class="projects-more-sub">Access the full GitHub repository</p>
+                    <span class="projects-more-btn">Access Granted →</span>
+                </a>
+                <img alt="The Presenter" class="projects-presenter float-anim" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfZaW_SCqGNiXZnpAWrHJRcjNzt5umI142N_GAxQvewG4zAXLdjMkDae4Ij5gniI55YlTup65qHTV7OOVjkOhvW4tLgLsDntdh2qjXNNzSzJn2lwO4RemfCVhtdawJ6ABanDKdqLcYTtN1oy3tQZOXvGKxdQUL_m0UiKnX55T843avJBtAL_lZYwBd2_KDKBHYDY6qxogV5lemk2e8cza2-sXBdFr8CZLWiTtPY0JOwtup3Y0a76MgSHcIk0h2rLFpAl2aOL3mQY4">
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section class="certifications-section pop-in tilt-effect" id="certifications">
+            <div class="certifications-inner">
+                <div class="certifications-image-wrap pop-in">
+                    <img alt="The Genius" class="certifications-image float-anim tilt-effect" src="https://lh3.googleusercontent.com/aida/ADBb0ugbxZ1tHuabqRi4rbQ6-KFedZGKmAwoMaokn3tbmohPPmZR7HJcZpMQDyb_rSMMU1GY1GyL12XFTI3f4Rsq-mCBaT-lumvGyEJUGAh2M9GVSKJpu7y9NveX1pzbREK3ZiTzCs1xMPNBW1BOOOLA4rP9mNJJ8OksxEyL6nBKn0XG0jok4zV4X7Q4vAOBSPcJNpTxcSEVbQ6jsF0DRIgYG4jBVqJL8ghv4vheLWy2qhb_eSESAp1x8XJyy3Iyr5Wl1nWJBnbv0U18Ng">
+                    <div class="certifications-caption caption-box tilt-effect">CERTIFICATIONS</div>
+                </div>
+                <div class="certifications-card pop-in tilt-effect">
+                    <h2 class="certifications-title">Official Accolades</h2>
+                    <div class="certifications-list">
+                        <div class="cert-item cert-item--primary tilt-effect">
+                            <h4 class="cert-name">IBM Data Analyst Professional Certificate</h4>
+                            <p class="cert-meta">IBM × Coursera • 2025</p>
+                        </div>
+                        <div class="cert-item cert-item--tertiary tilt-effect">
+                            <h4 class="cert-name">IBM Business Analyst Professional Certificate</h4>
+                            <p class="cert-meta">IBM × Coursera • Ongoing</p>
+                        </div>
+                        <div class="cert-item cert-item--secondary tilt-effect">
+                            <h4 class="cert-name">Introduction to Front-End Development</h4>
+                            <p class="cert-meta">Meta × Coursera • 2024</p>
+                        </div>
+                        <!-- More Certs (hidden by default) -->
+                        <div class="more-certs" id="more-certs">
+                            <div class="cert-item cert-item--primary tilt-effect">
+                                <h4 class="cert-name">Prompt Engineering</h4>
+                                <p class="cert-meta">Udemy • 2023</p>
+                            </div>
+                            <div class="cert-item cert-item--tertiary tilt-effect">
+                                <h4 class="cert-name">Programming with JavaScript</h4>
+                                <p class="cert-meta">Meta × Coursera • 2024</p>
+                            </div>
+                            <div class="cert-item cert-item--secondary tilt-effect">
+                                <h4 class="cert-name">CodeXpress7.53 Coding Contest</h4>
+                                <p class="cert-meta">Coding Ninjas • 2024</p>
+                            </div>
+                            <div class="cert-item cert-item--primary tilt-effect">
+                                <h4 class="cert-name">Multidisciplinary Function of AI</h4>
+                                <p class="cert-meta">Meridean Overseas • 2023</p>
+                            </div>
+                            <div class="cert-item cert-item--tertiary tilt-effect">
+                                <h4 class="cert-name">Kickstart to Python</h4>
+                                <p class="cert-meta">SFIT • 2022</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn-comic btn-comic--tertiary tilt-effect" id="certs-btn">View More</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section pop-in" id="contact">
+            <div class="contact-card tilt-effect">
+                <h2 class="contact-title tilt-effect">Let's Talk</h2>
+                <p class="contact-subtitle">GOOD PROJECTS START WITH GOOD CONVERSATIONS.<br>THIS CAN BE ONE OF THEM.</p>
+                <div class="contact-links pop-in">
+                    <div class="contact-btn-wrap">
+                        <a class="contact-btn tilt-effect" href="#" id="email-btn">Email</a>
+                        <div class="email-dropdown" id="email-dropdown">
+                            <span class="email-dropdown-text">aryanpange010@gmail.com</span>
+                            <span class="email-dropdown-copied" id="email-copied-msg">Copied!</span>
+                        </div>
+                    </div>
+                    <a class="contact-btn tilt-effect" href="Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+                    <a class="contact-btn tilt-effect" href="https://www.linkedin.com/in/aryan-pange-a11376247/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a class="contact-btn tilt-effect" href="https://github.com/aryanpange" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-logo">ARYAN.404</div>
+        <p class="footer-tagline">Still learning. Still building.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
